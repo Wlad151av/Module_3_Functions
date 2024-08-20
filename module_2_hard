@@ -1,0 +1,7 @@
+k = int(input("Введите число на левой табличке: "))   # to get initial data for calculation
+ans = []                                              # empty list creation for correct password generation
+for i in range(1,k):                                  # 
+  for j in range(i,k):
+    if (i+j) % k == 0:
+      ans = ans + list(str(i)+str(j))
+print(''.join(ans))
